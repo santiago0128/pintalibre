@@ -1,0 +1,9 @@
+{
+  "name": "pintalibre",
+  "productName": "PintaLibre",
+  "version": "1.0.0",
+  "description": "PintaLibre - app de dibujo",
+  "main": "main.js",
+  "author": "PintaLibre",
+  "license": "UNLICENSED"
+}

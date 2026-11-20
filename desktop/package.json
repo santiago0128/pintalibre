@@ -1,0 +1,18 @@
+{
+  "name": "pintalibre-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Versión de escritorio (Electron) de PintaLibre",
+  "scripts": {
+    "prepare-app": "node scripts/prepare.js",
+    "start": "npm run prepare-app && electron app",
+    "build:win": "npm run prepare-app && electron-packager app PintaLibre --platform=win32 --arch=x64 --electron-version=45.4.1 --icon=build/icon.ico --out=dist --overwrite --asar --app-copyright=PintaLibre --app-version=1.0.0 --win32metadata.ProductName=PintaLibre --win32metadata.FileDescription=\"PintaLibre - app de dibujo\" --win32metadata.CompanyName=PintaLibre",
+    "installer": "node -e \"require('fs').mkdirSync('release',{recursive:true})\" && makensis installer.nsi"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "electron": "45.4.1",
+    "png-to-ico": "^3.0.2"
+  }
+}

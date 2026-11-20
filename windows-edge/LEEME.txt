@@ -1,0 +1,35 @@
+PintaLibre - versión que Windows no bloquea
+============================================
+
+Por qué Windows bloqueaba PintaLibre.exe
+----------------------------------------
+Tu PC tiene activado el "Control inteligente de aplicaciones" (Smart App Control)
+de Windows 11. Bloquea cualquier programa que no esté firmado con un certificado
+comercial de pago, y PintaLibre.exe no lo está. No es un virus: Seguridad de
+Windows no detectó nada.
+
+Esta versión se abre como app con Microsoft Edge (que sí está firmado por
+Microsoft), así que Windows no la bloquea. Es la misma PintaLibre, con
+autoguardado, exportar PNG y guardar/abrir proyectos.
+
+Cómo instalarla (2 minutos)
+---------------------------
+1. Clic derecho en el ZIP descargado > Propiedades > marca "Desbloquear" > Aceptar.
+2. Clic derecho en el ZIP > "Extraer todo..." y escribe como destino:
+       C:\Users\santi
+   (debe quedar la carpeta C:\Users\santi\PintaLibre)
+3. Abre esa carpeta y arrastra "PintaLibre" (el acceso directo con el icono)
+   al Escritorio con clic derecho > "Crear accesos directos aquí",
+   o simplemente cópialo y pégalo en el Escritorio.
+4. Doble clic en el acceso directo. Puedes anclarlo a la barra de tareas
+   (clic derecho en el icono abierto > Anclar a la barra de tareas).
+
+Si pusiste la carpeta en otro lugar
+-----------------------------------
+Clic derecho en el Escritorio > Nuevo > Acceso directo, y pega esto
+(cambiando la ruta por donde quedó PintaLibre.html):
+
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --app="C:\Users\santi\PintaLibre\PintaLibre.html"
+
+Ponle de nombre PintaLibre. Para el icono: clic derecho > Propiedades >
+Cambiar icono > Examinar > icon.ico de la carpeta PintaLibre.

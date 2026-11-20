@@ -1,0 +1,13 @@
+node_modules/
+desktop/dist/
+desktop/release/
+desktop/app/web/
+*.zip
+*.lnk
+.DS_Store
+Thumbs.db
+# iconos generados desde assets/icon.svg (npm run prepare-app)
+desktop/app/icon.png
+desktop/build/
+windows-edge/icon.ico
+desktop/package-lock.json
